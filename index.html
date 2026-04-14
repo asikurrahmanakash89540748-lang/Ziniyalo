@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziniya + Akash</title>
+    <style>
+        /* Premium CSS Design */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px 20px;
+            border-radius: 25px;
+            width: 85%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        h1 { font-size: 26px; margin-bottom: 10px; color: #ff4d6d; text-shadow: 2px 2px 10px rgba(255,77,109,0.5); }
+        h2 { font-size: 20px; margin-bottom: 20px; color: #ff758c; }
+        p { font-size: 16px; line-height: 1.6; color: #e0e0e0; }
+
+        .btn {
+            background: linear-gradient(90deg, #ff4d6d, #ff758c);
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255,77,109,0.4);
+        }
+
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255,77,109,0.6); }
+
+        /* Hidden Sections */
+        #page2, #page3, #page4, #page5, #pass-box { display: none; }
+
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-align: center;
+            outline: none;
+            font-size: 18px;
+        }
+
+        #story-container {
+            max-height: 350px;
+            overflow-y: auto;
+            text-align: left;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        #story-container::-webkit-scrollbar { width: 4px; }
+        #story-container::-webkit-scrollbar-thumb { background: #ff4d6d; border-radius: 10px; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .heart { color: #ff4d6d; }
+    </style>
+</head>
+<body>
+
+    <!-- Page 1: Home -->
+    <div id="page1" class="card">
+        <h1>Ziniya + Akash</h1>
+        <p>Love Story <span class="heart">❤</span></p>
+        <button class="btn" onclick="showPage('page1', 'page2')">গল্পটি শুরু করুন</button>
+    </div>
+
+    <!-- Page 2: Password -->
+    <div id="page2" class="card">
+        <h2>ভালোবাসার শেষ কাহিনী</h2>
+        <div id="pass-box" style="display:block;">
+            <p>গোপন পাসওয়ার্ডটি দিন</p>
+            <input type="password" id="passInput" placeholder="Password Here">
+            <button class="btn" onclick="checkPassword()">গল্পটি খুলুন</button>
+        </div>
+    </div>
+
+    <!-- Page 3: The Story -->
+    <div id="page3" class="card">
+        <h2>আমাদের গল্প 💔</h2>
+        <div id="story-container">
+            <p>একটা ছেলের গল্প… 😔<br>ছেলেটার জীবনটা খুব সাধারণ 😶 কিন্তু তার স্বপ্নগুলো ছিল অনেক বড় 🌌✨<br>তার জীবনে একটা মানুষ ছিল—জিনিয়া 👩‍❤️‍👨💖<br>মেয়েটাকে সে এতটাই ভালোবাসত 😭❤️ যে নিজের ভবিষ্যৎ, নিজের স্বপ্ন—সবকিছুই সে তার সাথে জড়িয়ে ফেলেছিল 🤝💞<br>ওরা দুজন দুজনকে খুব ভালোবাসত 🥺❤️‍🔥<br>ছেলেটা ঠিক করে ফেলেছিল—পরীক্ষা শেষ হলেই পালাবে 🏃‍♂️💨<br>নতুন একটা জীবন শুরু করবে 🌅🏡💑<br>কিন্তু একটা সমস্যা ছিল—টাকা 💸😞<br>ছেলেটা ভাবল—“আমাকেই কিছু করতে হবে” 💪😢<br>সেই থেকেই তার লড়াই শুরু ⚔️🔥<br>দিন-রাত পরিশ্রম 😓💻🌙<br>একটা অ্যাপ বানাতে শুরু করল 📱🛠️<br>তার একটাই স্বপ্ন— এই অ্যাপ থেকে টাকা আসবে 💰✨ সব সে জিনিয়াকে দেবে 🎁💖 যেন তার ভালোবাসার মানুষটার ১% কষ্টও না হয় 😭❤️<br>কিন্তু এই স্বপ্নের জন্য 😞 সে জিনিয়াকে সময় দিতে পারছিল না ⏳💔 সে ভাবছিল—“সব ঠিক হয়ে যাবে…” 🤞😔<br>কিন্তু… 😶‍🌫️ হঠাৎ একদিন সব বদলে গেল ⚡💔 জিনিয়া অদ্ভুত আচরণ করতে লাগল 😕😞 কথা এলোমেলো 🗣️❓<br>তারপর… ব্রেকআপ 💔😢<br>ছেলেটার শরীর কেঁপে উঠল 😨💥 ভিতরে ভিতরে সে চিৎকার করছিল 😭📢 “যাস না… প্লিজ যাস না…” 🙏💔 কিন্তু মুখে কিছু বলতে পারল না 😶💭 উল্টো বলল—“ঠিক আছে… চলে যাও…” 😞🚶‍♀️<br>এই কথাটা বলার সময় তার বুকটা ভেঙে যাচ্ছিল 💔💥😭<br>তারপর… জিনিয়া তাকে ব্লক করে দিল 🚫📵💔 এক মুহূর্তে সে একা 😞🖤 সবকিছু শেষ 🕳️💔 সে বিছানায় পড়ে গেল 🛏️😢 কান্না থামাতে পারল না 😭😭😭<br>কারণ সে শুধু একজন মানুষকে হারায়নি— সে তার সব স্বপ্ন হারিয়েছে 🌙💔 সে তো জিনিয়াকে নিজের স্ত্রী হিসেবে ভেবেছিল 💍👰‍♀️ একটা পুরো জীবন একসাথে কাটানোর স্বপ্ন দেখেছিল 🏡❤️<br>আর আজ… সব শেষ 😞💔🥀</p>
+        </div>
+        <button class="btn" onclick="showPage('page3', 'page4')">জিনিয়া তোমার জন্য কিছু প্রশ্ন</button>
+    </div>
+
+    <!-- Page 4: Question Page -->
+    <div id="page4" class="card">
+        <h2>জিনিয়া, সত্যি করে বলো...</h2>
+        <button class="btn" onclick="showFinalResult('stay')">আমি তোমাকে ছেড়ে যাব না</button>
+        <button class="btn" onclick="showFinalResult('leave')">তুমি আমাকে আর এসএমএস দিবা না</button>
+    </div>
+
+    <!-- Page 5: Final Message -->
+    <div id="page5" class="card">
+        <h2 id="finalTitle">আকাশের কথা...</h2>
+        <p id="finalMessage" style="font-size: 18px; font-weight: bold; color: #fff;"></p>
+        <button class="btn" onclick="location.reload()">শেষ করুন</button>
+    </div>
+
+    <script>
+        function showPage(oldId, newId) {
+            document.getElementById(oldId).style.display = 'none';
+            document.getElementById(newId).style.display = 'block';
+        }
+
+        function checkPassword() {
+            var pass = document.getElementById('passInput').value;
+            if (pass === "Ziniya") {
+                showPage('page2', 'page3');
+            } else {
+                alert("ভুল পাসওয়ার্ড! (Hint: Ziniya)");
+            }
+        }
+
+        function showFinalResult(choice) {
+            document.getElementById('page4').style.display = 'none';
+            document.getElementById('page5').style.display = 'block';
+            
+            var msgBox = document.getElementById('finalMessage');
+            
+            if(choice === 'stay') {
+                msgBox.innerHTML = "আকাশ তোমার জন্য অনেক কান্না করতেছে, তাকে একটু সান্ত্বনা দাও প্লিজ। 😭💔";
+            } else {
+                msgBox.innerHTML = "আকাশ তোমাকে ছাড়া থাকতে পারবে না, তুমি একটু তাকে আপন করে নাও। 🥺🙏❤️";
+            }
+        }
+    </script>
+</body>
+</html>
